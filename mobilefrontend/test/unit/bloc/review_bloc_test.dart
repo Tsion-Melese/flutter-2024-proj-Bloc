@@ -1,11 +1,11 @@
 import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:mobilefrontend/review/bloc/review_bloc.dart';
-import 'package:mobilefrontend/review/bloc/review_event.dart';
-import 'package:mobilefrontend/review/bloc/review_state.dart';
-import 'package:mobilefrontend/review/model/review_model.dart';
-import 'package:mobilefrontend/review/model/update_review_model.dart';
-import 'package:mobilefrontend/review/repostory/review_repo.dart';
+import 'package:mobilefrontend/review/application/bloc/review_bloc.dart';
+import 'package:mobilefrontend/review/application/bloc/review_event.dart';
+import 'package:mobilefrontend/review/application/bloc/review_state.dart';
+import 'package:mobilefrontend/review/domain/model/review_model.dart';
+import 'package:mobilefrontend/review/domain/model/update_review_model.dart';
+import 'package:mobilefrontend/review/infrastructure/repostory/review_repo.dart';
 import 'package:mocktail/mocktail.dart';
 
 class MockReviewRepository extends Mock implements ReviewRepository {}

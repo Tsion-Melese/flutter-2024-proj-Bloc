@@ -1,12 +1,12 @@
 import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:mobilefrontend/job/repostory/job_repostory.dart';
+import 'package:mobilefrontend/job/infrastructure/repostory/job_repostory.dart';
 import 'package:mocktail/mocktail.dart';
-import 'package:mobilefrontend/job/bloc/job_bloc.dart';
-import 'package:mobilefrontend/job/bloc/job_event.dart';
-import 'package:mobilefrontend/job/bloc/job_state.dart';
-import 'package:mobilefrontend/job/model/job_model.dart';
-import 'package:mobilefrontend/job/model/update_job_model.dart';
+import 'package:mobilefrontend/job/application/bloc/job_bloc.dart';
+import 'package:mobilefrontend/job/application/bloc/job_event.dart';
+import 'package:mobilefrontend/job/application/bloc/job_state.dart';
+import 'package:mobilefrontend/job/domain/model/job_model.dart';
+import 'package:mobilefrontend/job/domain/model/update_job_model.dart';
 
 class MockJobRepository extends Mock implements JobRepository {}
 

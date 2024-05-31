@@ -1,12 +1,12 @@
 import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:mobilefrontend/auth/model/login_model.dart';
-import 'package:mobilefrontend/user/bloc/user_bloc.dart';
-import 'package:mobilefrontend/user/bloc/user_event.dart';
-import 'package:mobilefrontend/user/bloc/user_state.dart';
-import 'package:mobilefrontend/user/model/update_user_model.dart';
-import 'package:mobilefrontend/user/model/user_model.dart';
-import 'package:mobilefrontend/user/repostory/user_repo.dart';
+import 'package:mobilefrontend/auth/domain/model/login_model.dart';
+import 'package:mobilefrontend/user/application/bloc/user_bloc.dart';
+import 'package:mobilefrontend/user/application/bloc/user_event.dart';
+import 'package:mobilefrontend/user/application/bloc/user_state.dart';
+import 'package:mobilefrontend/user/domain/model/update_user_model.dart';
+import 'package:mobilefrontend/user/domain/model/user_model.dart';
+import 'package:mobilefrontend/user/infrastructure/repostory/user_repo.dart';
 import 'package:mocktail/mocktail.dart';
 
 class MockUserRepository extends Mock implements UserRepository {}

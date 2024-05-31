@@ -1,11 +1,11 @@
 import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:mobilefrontend/auth/bloc/login_bloc.dart';
-import 'package:mobilefrontend/auth/bloc/login_event.dart';
-import 'package:mobilefrontend/auth/bloc/login_state.dart';
-import 'package:mobilefrontend/auth/model/auth_model.dart';
-import 'package:mobilefrontend/auth/model/login_model.dart';
-import 'package:mobilefrontend/auth/repository/login_repo.dart';
+import 'package:mobilefrontend/auth/application/bloc/login_bloc.dart';
+import 'package:mobilefrontend/auth/application/bloc/login_event.dart';
+import 'package:mobilefrontend/auth/application/bloc/login_state.dart';
+import 'package:mobilefrontend/auth/domain/model/auth_model.dart';
+import 'package:mobilefrontend/auth/domain/model/login_model.dart';
+import 'package:mobilefrontend/auth/infrastructure/repository/login_repo.dart';
 import 'package:mocktail/mocktail.dart';
 
 class MockAuthRepository extends Mock implements AuthRepository {}

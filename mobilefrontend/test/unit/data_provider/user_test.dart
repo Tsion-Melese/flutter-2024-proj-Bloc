@@ -2,9 +2,9 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:dio/dio.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:mobilefrontend/user/data_provider/user_data_provider.dart';
-import 'package:mobilefrontend/user/model/update_user_model.dart';
-import 'package:mobilefrontend/user/model/user_model.dart';
+import 'package:mobilefrontend/user/infrastructure/data_provider/user_data_provider.dart';
+import 'package:mobilefrontend/user/domain/model/update_user_model.dart';
+import 'package:mobilefrontend/user/domain/model/user_model.dart';
 
 class MockDio extends Mock implements Dio {}
 

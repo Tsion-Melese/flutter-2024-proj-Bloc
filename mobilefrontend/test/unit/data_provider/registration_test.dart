@@ -1,8 +1,8 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:mobilefrontend/auth/data_provider/registration_data_provider.dart';
+import 'package:mobilefrontend/auth/infrastructure/data_provider/registration_data_provider.dart';
 import 'package:mocktail/mocktail.dart';
-import 'package:mobilefrontend/auth/repository/registration_repo.dart';
-import 'package:mobilefrontend/auth/model/registration_model.dart';
+import 'package:mobilefrontend/auth/infrastructure/repository/registration_repo.dart';
+import 'package:mobilefrontend/auth/domain/model/registration_model.dart';
 
 class MockRegDataProvider extends Mock implements AuthRegDataProvider {}
 

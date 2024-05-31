@@ -1,8 +1,8 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:mobilefrontend/auth/data_provider/login_data_providerl.dart';
+import 'package:mobilefrontend/auth/infrastructure/data_provider/login_data_providerl.dart';
 import 'package:mocktail/mocktail.dart';
-import 'package:mobilefrontend/auth/repository/login_repo.dart';
-import 'package:mobilefrontend/auth/model/login_model.dart';
+import 'package:mobilefrontend/auth/infrastructure/repository/login_repo.dart';
+import 'package:mobilefrontend/auth/domain/model/login_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class MockAuthDataProvider extends Mock implements AuthDataProvider {}

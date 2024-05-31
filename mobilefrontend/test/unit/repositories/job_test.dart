@@ -1,9 +1,9 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:mobilefrontend/job/repostory/job_repostory.dart';
+import 'package:mobilefrontend/job/infrastructure/repostory/job_repostory.dart';
 import 'package:mocktail/mocktail.dart';
-import 'package:mobilefrontend/job/data_provider/job_data_provider.dart';
-import 'package:mobilefrontend/job/model/job_model.dart';
-import 'package:mobilefrontend/job/model/update_job_model.dart';
+import 'package:mobilefrontend/job/infrastructure/data_provider/job_data_provider.dart';
+import 'package:mobilefrontend/job/domain/model/job_model.dart';
+import 'package:mobilefrontend/job/domain/model/update_job_model.dart';
 
 class MockJobDataProvider extends Mock implements JobDataProvider {}
 
