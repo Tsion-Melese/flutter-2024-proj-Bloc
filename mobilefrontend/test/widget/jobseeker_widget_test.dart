@@ -67,5 +67,61 @@ void main() {
       // Print the widget tree for debugging
       debugDumpApp();
     });
+    testWidgets('JobSeekers CV UI Test - Widget Interaction',
+        (WidgetTester tester) async {
+      // Mock job data
+      final List<Job> jobs = [
+        Job(
+          jobId: '1',
+          title: 'Job 1',
+          phonenumber: '1234567890',
+          salary: 1000,
+          createrId: 2,
+          userType: UserType.JOB_SEEKER,
+          description: 'something',
+        ),
+        Job(
+          jobId: '2',
+          title: 'Job 2',
+          phonenumber: '1234567890',
+          salary: 1000,
+          createrId: 2,
+          userType: UserType.JOB_SEEKER,
+          description: 'something',
+        ),
+      ];
+
+      // Create a mock JobBloc instance
+      final jobBloc = MockJobBloc();
+
+      // Stub the stream to emit the initial state with the job data
+      when(jobBloc.stream)
+          .thenAnswer((_) => Stream.value(JobLoadedState(jobs)));
+
+      // Define the test widget
+      await tester.pumpWidget(
+        MaterialApp(
+          home: BlocProvider.value(
+            value: jobBloc,
+            child: JobSeekerJobsPage(),
+          ),
+        ),
+      );
+
+      // Wait for loading to finish
+      await tester.pump();
+
+      // Perform interaction (tap on the first job item)
+      await tester.tap(find.text('Job 1'));
+      await tester.pump();
+
+      // Verify the navigation to a detailed job view or any expected behavior
+      // For example, checking if a specific widget appears after tapping
+      expect(find.text('Details of Job 1'), findsOneWidget);
+
+      expect(find.text('Job List'), findsNothing);
+
+      debugDumpApp();
+    });
   }
 }
